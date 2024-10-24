@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int lineNumber = 1; // Initialize line number
+
+        // Loop while there is more input
+        while (s.hasNext()) { 
+            String line = s.nextLine(); // Read the next line
+            System.out.println(lineNumber + " " + line); // Print line with its number
+            lineNumber++; // Increment the line number for the next line
+        }
+
+        s.close(); // Close the scanner
+    }
+}
