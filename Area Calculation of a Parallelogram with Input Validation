@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Solution {
+    // Declare static variables
+    static int B;
+    static int H;
+    static boolean flag = true;
+
+    // Static block to initialize and validate B and H
+    static {
+        Scanner sc = new Scanner(System.in);
+        
+        // Read the breadth and height from input
+        B = sc.nextInt();
+        H = sc.nextInt();
+
+        // Check if breadth and height are positive
+        if (B <= 0 || H <= 0) {
+            flag = false;
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+        }
+    }
+
+    public static void main(String[] args) {
+        if (flag) {
+            // Calculate and print the area if values are valid
+            int area = B * H;
+            System.out.print(area);
+        }
+    }
+}
